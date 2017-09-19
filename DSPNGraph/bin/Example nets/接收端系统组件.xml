@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><pnml>
+<net id="Net-One" type="P/T net">
+<token id="Black" enabled="true" red="0" green="0" blue="0"/>
+<token id="Green" enabled="true" red="0" green="255" blue="0"/>
+<token id="Red" enabled="true" red="255" green="0" blue="0"/>
+<labels x="22" y="22" width="106" height="22" border="true">
+<text>Petri Model</text>
+</labels>
+<place id="RES1_InQueue">
+<graphics>
+<position x="50.0" y="210.0"/>
+</graphics>
+<name>
+<value>RES1_InQueue</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Black,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="RES1_SPM1_VL0_Receiption">
+<graphics>
+<position x="815.0" y="210.0"/>
+</graphics>
+<name>
+<value>RES1_SPM1_VL0_Receiption</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Black,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="RES1_SPM1_VL0_Rec-Port">
+<graphics>
+<position x="425.0" y="210.0"/>
+</graphics>
+<name>
+<value>RES1_SPM1_VL0_Rec-Port</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Black,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="RES1_SPM1_VL1_Receiption">
+<graphics>
+<position x="815.0" y="270.0"/>
+</graphics>
+<name>
+<value>RES1_SPM1_VL1_Receiption</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Black,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="RES1_SPM1_VL1_Rec-Port">
+<graphics>
+<position x="425.0" y="270.0"/>
+</graphics>
+<name>
+<value>RES1_SPM1_VL1_Rec-Port</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Black,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="RES1_SPM1_VL2_Receiption">
+<graphics>
+<position x="815.0" y="330.0"/>
+</graphics>
+<name>
+<value>RES1_SPM1_VL2_Receiption</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Black,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="RES1_SPM1_VL2_Rec-Port">
+<graphics>
+<position x="425.0" y="330.0"/>
+</graphics>
+<name>
+<value>RES1_SPM1_VL2_Rec-Port</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Black,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<transition id="RES1_SPM1_VL0_RM">
+<graphics>
+<position x="245.0" y="210.0"/>
+</graphics>
+<name>
+<value>RES1_SPM1_VL0_RM</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>5.0</value>
+</rate>
+<type>
+<value>1</value>
+</type>
+<delay>
+<value>0.2</value>
+</delay>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="RES1_SPM1_VL0_TenchLatency">
+<graphics>
+<position x="620.0" y="210.0"/>
+</graphics>
+<name>
+<value>RES1_SPM1_VL0_TenchLatency</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>0.15</value>
+</rate>
+<type>
+<value>2</value>
+</type>
+<delay>
+<value>0.15</value>
+</delay>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="RES1_SPM1_VL1_RM">
+<graphics>
+<position x="245.0" y="270.0"/>
+</graphics>
+<name>
+<value>RES1_SPM1_VL1_RM</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>5.0</value>
+</rate>
+<type>
+<value>1</value>
+</type>
+<delay>
+<value>0.2</value>
+</delay>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="RES1_SPM1_VL1_TenchLatency">
+<graphics>
+<position x="620.0" y="270.0"/>
+</graphics>
+<name>
+<value>RES1_SPM1_VL1_TenchLatency</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>0.15</value>
+</rate>
+<type>
+<value>2</value>
+</type>
+<delay>
+<value>0.15</value>
+</delay>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="RES1_SPM1_VL2_RM">
+<graphics>
+<position x="245.0" y="330.0"/>
+</graphics>
+<name>
+<value>RES1_SPM1_VL2_RM</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>5.0</value>
+</rate>
+<type>
+<value>1</value>
+</type>
+<delay>
+<value>0.2</value>
+</delay>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="RES1_SPM1_VL2_TenchLatency">
+<graphics>
+<position x="620.0" y="330.0"/>
+</graphics>
+<name>
+<value>RES1_SPM1_VL2_TenchLatency</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>0.15</value>
+</rate>
+<type>
+<value>2</value>
+</type>
+<delay>
+<value>0.15</value>
+</delay>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<arc id="RES1_InQueue to RES1_SPM1_VL0_RM" source="RES1_InQueue" target="RES1_SPM1_VL0_RM">
+<graphics/>
+<inscription>
+<value>Black,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="76" y="222" curvePoint="false"/>
+<arcpath id="001" x="251" y="222" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="RES1_InQueue to RES1_SPM1_VL1_RM" source="RES1_InQueue" target="RES1_SPM1_VL1_RM">
+<graphics/>
+<inscription>
+<value>Black,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="76" y="226" curvePoint="false"/>
+<arcpath id="001" x="251" y="282" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="RES1_InQueue to RES1_SPM1_VL2_RM" source="RES1_InQueue" target="RES1_SPM1_VL2_RM">
+<graphics/>
+<inscription>
+<value>Black,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="74" y="229" curvePoint="false"/>
+<arcpath id="001" x="251" y="342" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="RES1_SPM1_VL0_Rec-Port to RES1_SPM1_VL0_TenchLatency" source="RES1_SPM1_VL0_Rec-Port" target="RES1_SPM1_VL0_TenchLatency">
+<graphics/>
+<inscription>
+<value>Black,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="451" y="222" curvePoint="false"/>
+<arcpath id="001" x="626" y="222" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="RES1_SPM1_VL0_RM to RES1_SPM1_VL0_Rec-Port" source="RES1_SPM1_VL0_RM" target="RES1_SPM1_VL0_Rec-Port">
+<graphics/>
+<inscription>
+<value>Black,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="261" y="222" curvePoint="false"/>
+<arcpath id="001" x="422" y="222" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="RES1_SPM1_VL0_TenchLatency to RES1_SPM1_VL0_Receiption" source="RES1_SPM1_VL0_TenchLatency" target="RES1_SPM1_VL0_Receiption">
+<graphics/>
+<inscription>
+<value>Black,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="636" y="222" curvePoint="false"/>
+<arcpath id="001" x="812" y="222" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="RES1_SPM1_VL1_Rec-Port to RES1_SPM1_VL1_TenchLatency" source="RES1_SPM1_VL1_Rec-Port" target="RES1_SPM1_VL1_TenchLatency">
+<graphics/>
+<inscription>
+<value>Black,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="451" y="282" curvePoint="false"/>
+<arcpath id="001" x="626" y="282" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="RES1_SPM1_VL1_RM to RES1_SPM1_VL1_Rec-Port" source="RES1_SPM1_VL1_RM" target="RES1_SPM1_VL1_Rec-Port">
+<graphics/>
+<inscription>
+<value>Black,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="261" y="282" curvePoint="false"/>
+<arcpath id="001" x="422" y="282" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="RES1_SPM1_VL1_TenchLatency to RES1_SPM1_VL1_Receiption" source="RES1_SPM1_VL1_TenchLatency" target="RES1_SPM1_VL1_Receiption">
+<graphics/>
+<inscription>
+<value>Black,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="636" y="282" curvePoint="false"/>
+<arcpath id="001" x="812" y="282" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="RES1_SPM1_VL2_Rec-Port to RES1_SPM1_VL2_TenchLatency" source="RES1_SPM1_VL2_Rec-Port" target="RES1_SPM1_VL2_TenchLatency">
+<graphics/>
+<inscription>
+<value>Black,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="451" y="342" curvePoint="false"/>
+<arcpath id="001" x="626" y="342" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="RES1_SPM1_VL2_RM to RES1_SPM1_VL2_Rec-Port" source="RES1_SPM1_VL2_RM" target="RES1_SPM1_VL2_Rec-Port">
+<graphics/>
+<inscription>
+<value>Black,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="261" y="342" curvePoint="false"/>
+<arcpath id="001" x="422" y="342" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="RES1_SPM1_VL2_TenchLatency to RES1_SPM1_VL2_Receiption" source="RES1_SPM1_VL2_TenchLatency" target="RES1_SPM1_VL2_Receiption">
+<graphics/>
+<inscription>
+<value>Black,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="636" y="342" curvePoint="false"/>
+<arcpath id="001" x="812" y="342" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+</net>
+</pnml>
